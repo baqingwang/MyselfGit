@@ -9,4 +9,5 @@ mybatis-plus:
   global-config:
     db-config:
       id-type: auto   #配置自增id
-
+server:
+  port: 10000
