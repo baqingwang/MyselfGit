@@ -9,3 +9,7 @@
 
 ### 21-8-30 更新内容
 1、各自模块整体架构CURD创建完毕
+
+### 21-9-1 更新内容
+1、公共模块添加SpringCloudAlibaba一站式微服务，添加nacos注册中心
+2、coupon优惠券模块，member模块添加nacos注册中心
