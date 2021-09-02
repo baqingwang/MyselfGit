@@ -3,6 +3,7 @@ package com.baqw.gulimall.member.controller;
 import com.baqw.common.utils.PageUtils;
 import com.baqw.common.utils.R;
 import com.baqw.gulimall.member.entity.MemberEntity;
+import com.baqw.gulimall.member.feign.CoupenFeignService;
 import com.baqw.gulimall.member.service.MemberService;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.web.bind.annotation.*;
@@ -24,6 +25,18 @@ import java.util.Map;
 public class MemberController {
     @Autowired
     private MemberService memberService;
+
+    @Autowired
+    CoupenFeignService coupenFeignService;
+
+    @RequestMapping("/coupons")
+    public R test(){
+        MemberEntity memberEntity = new MemberEntity();
+        memberEntity.setNickname("张三");
+
+        R memberCoupon = coupenFeignService.memberCoupon();
+        return R.ok().put("member",memberEntity).put("coupons",memberCoupon.get("coupon"));
+    }
 
     /**
      * 列表

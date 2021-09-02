@@ -11,5 +11,10 @@
 1、各自模块整体架构CURD创建完毕
 
 ### 21-9-1 更新内容
-1、公共模块添加SpringCloudAlibaba一站式微服务，添加nacos注册中心
-2、coupon优惠券模块，member模块添加nacos注册中心
+1、公共模块添加SpringCloudAlibaba一站式微服务，
+2、学习添加Nacos服务发现注册中心
+3、coupon优惠券模块，member模块添加nacos注册中心
+
+### 21-9-2 更新内容
+1、学习添加OpenFeign远程调用服务的使用
+2、学习添加Nacos配置中心的方法
